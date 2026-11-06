@@ -1,0 +1,21 @@
+print("Ejercicio 7: Boletos para el concierto")
+print("Nombre: Alejandro Urzais Alvaro Diaz")
+print("Matrícula: AL07293822")
+print()
+
+# Pedimos el artista y cuántos boletos quiere
+artista = input("¿De quién es el concierto? ")
+cantidad = int(input("¿Cuántos boletos quieres? "))
+
+# Repetimos desde el boleto 1 hasta la cantidad elegida
+for boleto in range(1, cantidad + 1):
+
+    # Pedimos el nombre de quien va a usar este boleto
+    asistente = input("Nombre del asistente " + str(boleto) + ": ")
+
+    # Mostramos el boleto
+    print("🎟️ Boleto", boleto, "de", cantidad)
+    print("🎤", artista, "· Asistente:", asistente)
+
+# Esto se ejecuta cuando termina el for
+print("✅ Se generaron", cantidad, "boletos. ¡Disfruten el concierto!")
